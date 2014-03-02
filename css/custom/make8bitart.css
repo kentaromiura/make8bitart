@@ -19,7 +19,7 @@ a { color: blue; }
 
 /* canvas */
 canvas { background: #fff; cursor: crosshair; display: block; }
-    
+
 /* draggy "plugin" */
 .draggy { padding: 10px; box-shadow: 5px 5px 0 #000; border: 1px solid #000; background: #fffff3; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 img.ui-dragger { width: 30px; }
@@ -73,7 +73,7 @@ ul.instructions { padding: 0 0 0 20px; }
 .button.color.purple { background: purple; }
 .button.color.black { background: black; }
 .button.color.gray { background: gray; }
-.button.color.white { background: white; border: 2px solid rgba(0,0,0,.25); }    
+.button.color.white { background: white; border: 2px solid rgba(0,0,0,.25); }
 .button.color.favorite { background: hotpink; }
 .button.color.custom { background: url('../../assets/colorful.png'); }
 .button.color.transparent { border-color: #ccc; background: url('../../assets/bg.png'); }
@@ -111,3 +111,6 @@ ul.instructions { padding: 0 0 0 20px; }
 .clearfix { display: block; }
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
+
+.hidden{ display:none; }
+#default-palette, #dawnbringer-palette { cursor: pointer; }

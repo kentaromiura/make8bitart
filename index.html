@@ -204,10 +204,10 @@
 
 		<div id="color" class="inner clearfix">
       <h3>Palette</h3>
-      <a href=# onclick="$('.default')[0].style.display='';$('.DawnBringer')[0].style.display='none';">Default</a>
-      <a href=# onclick="$('.DawnBringer')[0].style.display='';$('.default')[0].style.display='none';">DarkBringer</a>
+      <a id="default-palette">Default</a>
+      <a id="dawnbringer-palette">DarkBringer</a>
       <h3>pick a color:</h3>
-      <section class="default">
+      <section class="default-palette">
   			<a class="button color primary red" title="red" data-color="rgba(255, 0, 0, 1)" /> </a>
   			<a class="button color primary orange" title="orange" data-color="rgba(255, 165, 0, 1)" /> </a>
   			<a class="button color primary yellow" title="yellow" data-color="rgba(255, 255, 0, 1)" /> </a>
@@ -219,23 +219,23 @@
   			<a class="button color primary white" title="white" data-color="rgba(255, 255, 255, 1)" /> </a>
   			<a class="button color favorite" title="jenn's pick" data-color="rgba(255, 105, 180, 1)" /> </a>
       </section>
-      <section class="DawnBringer" style="display:none">
-      <a class="button color primary" style="background-color:rgba(20, 12, 28, 1)" title="..." data-color="rgba(20, 12, 28, 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(68, 36, 52, 1)" title="..." data-color="rgba(68, 36, 52, 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(48, 52, 109, 1)" title="..." data-color="rgba(48, 52, 109, 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(78, 74, 78, 1)" title="..." data-color="rgba(78, 74, 78, 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(133, 76, 48, 1)" title="..." data-color="rgba(133, 76, 48, 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(52, 101, 36, 1)" title="..." data-color="rgba(52, 101, 36 , 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(208, 70, 72, 1)" title="..." data-color="rgba(208, 70, 72, 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(117, 113, 97, 1)" title="..." data-color="rgba(117, 113, 97, 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(89, 125, 206, 1)" title="..." data-color="rgba(89, 125, 206, 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(210, 125, 44, 1)" title="..." data-color="rgba(210, 125, 44, 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(133, 149, 161, 1)" title="..." data-color="rgba(133, 149, 161, 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(109, 170, 44, 1)" title="..." data-color="rgba(109, 170, 44, 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(210, 170, 153, 1)" title="..." data-color="rgba(210, 170, 153, 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(109, 194, 202, 1)" title="..." data-color="rgba(109, 194, 202, 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(218, 212, 94, 1)" title="..." data-color="rgba(218, 212, 94, 1)" /> </a>
-      <a class="button color primary" style="background-color:rgba(222, 238, 214, 1)" title="..." data-color="rgba(222, 238, 214, 1)" /> </a>
+      <section class="DawnBringer-palette hidden">
+      <a class="button color primary" title="Dark1" data-color="rgba(20, 12, 28, 1)" /> </a>
+      <a class="button color primary" title="Dark2" data-color="rgba(68, 36, 52, 1)" /> </a>
+      <a class="button color primary" title="Dark3" data-color="rgba(48, 52, 109, 1)" /> </a>
+      <a class="button color primary" title="Dark4" data-color="rgba(78, 74, 78, 1)" /> </a>
+      <a class="button color primary" title="Dark5" data-color="rgba(133, 76, 48, 1)" /> </a>
+      <a class="button color primary" title="Dark6" data-color="rgba(52, 101, 36 , 1)" /> </a>
+      <a class="button color primary" title="Dark7" data-color="rgba(208, 70, 72, 1)" /> </a>
+      <a class="button color primary" title="Dark8" data-color="rgba(117, 113, 97, 1)" /> </a>
+      <a class="button color primary" title="Light1" data-color="rgba(89, 125, 206, 1)" /> </a>
+      <a class="button color primary" title="Light2" data-color="rgba(210, 125, 44, 1)" /> </a>
+      <a class="button color primary" title="Light3" data-color="rgba(133, 149, 161, 1)" /> </a>
+      <a class="button color primary" title="Light4" data-color="rgba(109, 170, 44, 1)" /> </a>
+      <a class="button color primary" title="Light5" data-color="rgba(210, 170, 153, 1)" /> </a>
+      <a class="button color primary" title="Light6" data-color="rgba(109, 194, 202, 1)" /> </a>
+      <a class="button color primary" title="Light7" data-color="rgba(218, 212, 94, 1)" /> </a>
+      <a class="button color primary" title="Light8" data-color="rgba(222, 238, 214, 1)" /> </a>
     </section>
 			<a class="button color transparent" title="erase" data-color="rgba(0, 0, 0, 0)" /> </a>
 			<a class="button color custom" title="custom" /></a>
